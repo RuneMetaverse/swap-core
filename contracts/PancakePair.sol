@@ -1,14 +1,14 @@
 pragma solidity =0.5.16;
 
 import './interfaces/IPancakePair.sol';
-import './ArcaneERC20.sol';
+import './PancakeERC20.sol';
 import './libraries/Math.sol';
 import './libraries/UQ112x112.sol';
 import './interfaces/IERC20.sol';
 import './interfaces/IArcaneFactory.sol';
 import './interfaces/IArcaneCallee.sol';
 
-contract PancakePair is IPancakePair, ArcaneERC20 {
+contract PancakePair is IPancakePair, PancakeERC20 {
     using SafeMath  for uint;
     using UQ112x112 for uint224;
 

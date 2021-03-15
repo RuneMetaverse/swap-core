@@ -1,9 +1,9 @@
 pragma solidity =0.5.16;
 
-import './interfaces/IArcaneERC20.sol';
+import './interfaces/IPancakeERC20.sol';
 import './libraries/SafeMath.sol';
 
-contract ArcaneERC20 is IArcaneERC20 {
+contract PancakeERC20 is IPancakeERC20 {
     using SafeMath for uint;
 
     string public constant name = 'Arcane LPs';
