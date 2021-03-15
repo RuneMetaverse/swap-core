@@ -16,7 +16,7 @@ const TEST_ADDRESSES: [string, string] = [
   '0x2000000000000000000000000000000000000000'
 ]
 
-describe('ArcaneFactory', () => {
+describe('PancakeFactory', () => {
   const provider = new MockProvider({
     hardfork: 'istanbul',
     mnemonic: 'horn horn horn horn horn horn horn horn horn horn horn horn',

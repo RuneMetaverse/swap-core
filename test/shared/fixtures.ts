@@ -5,7 +5,7 @@ import { deployContract } from 'ethereum-waffle'
 import { expandTo18Decimals } from './utilities'
 
 import ERC20 from '../../build/ERC20.json'
-import ArcaneFactory from '../../build/ArcaneFactory.json'
+import PancakeFactory from '../../build/PancakeFactory.json'
 import PancakePair from '../../build/PancakePair.json'
 
 interface FactoryFixture {
@@ -17,7 +17,7 @@ const overrides = {
 }
 
 export async function factoryFixture(_: Web3Provider, [wallet]: Wallet[]): Promise<FactoryFixture> {
-  const factory = await deployContract(wallet, ArcaneFactory, [wallet.address], overrides)
+  const factory = await deployContract(wallet, PancakeFactory, [wallet.address], overrides)
   return { factory }
 }
 

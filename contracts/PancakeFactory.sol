@@ -1,9 +1,9 @@
 pragma solidity =0.5.16;
 
-import './interfaces/IArcaneFactory.sol';
+import './interfaces/IPancakeFactory.sol';
 import './PancakePair.sol';
 
-contract ArcaneFactory is IArcaneFactory {
+contract PancakeFactory is IPancakeFactory {
     bytes32 public constant INIT_CODE_PAIR_HASH = keccak256(abi.encodePacked(type(PancakePair).creationCode));
 
     address public feeTo;

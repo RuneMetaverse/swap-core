@@ -5,7 +5,7 @@ import './PancakeERC20.sol';
 import './libraries/Math.sol';
 import './libraries/UQ112x112.sol';
 import './interfaces/IERC20.sol';
-import './interfaces/IArcaneFactory.sol';
+import './interfaces/IPancakeFactory.sol';
 import './interfaces/IArcaneCallee.sol';
 
 contract PancakePair is IPancakePair, PancakeERC20 {
@@ -87,7 +87,7 @@ contract PancakePair is IPancakePair, PancakeERC20 {
 
     // if fee is on, mint liquidity equivalent to 1/6th of the growth in sqrt(k)
     function _mintFee(uint112 _reserve0, uint112 _reserve1) private returns (bool feeOn) {
-        address feeTo = IArcaneFactory(factory).feeTo();
+        address feeTo = IPancakeFactory(factory).feeTo();
         feeOn = feeTo != address(0);
         uint _kLast = kLast; // gas savings
         if (feeOn) {
