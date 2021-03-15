@@ -1,4 +1,4 @@
-# Pancake Factory
+# Arcane Factory
 
 [![Actions Status](https://github.com/arcanedefi/swap-core/workflows/CI/badge.svg)](https://github.com/arcanedefi/swap-core/actions)
 

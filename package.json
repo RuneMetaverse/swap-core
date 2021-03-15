@@ -1,7 +1,7 @@
 {
   "name": "@arcanefinance/swap-core",
   "description": "🎛 Core contracts for the arcane protocol",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "homepage": "https://arcane.finance",
   "repository": {
     "type": "git",
